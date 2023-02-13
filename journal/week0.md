@@ -1,11 +1,8 @@
 # Week 0 — Billing and Architecture
 
-<h1>In the class, we are going to lay out the foundation for the entire boot camp by:</h1>
+<h3>Discussing the format of the boot camp?</h3>
 
-`Discussing the format of the boot camp?`
-
-This is a 14-week Boot camp from February 11 until the end week of May 2023.
-
+- This is a 14-week Boot camp from February 11 until the end week of May 2023.
 - Boot camp will be focused on using the AWS cloud technologies.
 - Each week's sessions build off each other and are connected from the first to the last sessions.
 - Organizer will provide homework for a knowledge transfer using discord, youtube live for a communication channel.
