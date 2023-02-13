@@ -1,6 +1,6 @@
 # Week 0 — Billing and Architecture
 
-`In the class, we are going to lay out the foundation for the entire boot camp by:`
+<h1>In the class, we are going to lay out the foundation for the entire boot camp by:</h1>
 
 `Discussing the format of the boot camp?`
 
