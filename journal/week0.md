@@ -8,7 +8,7 @@ De# Week 0 — Billing and Architecture
 - Organizer will provide homework for a knowledge transfer using discord, youtube live for a communication channel.
 - There are also grading and completion you will earn a digital badge from the boot camp organizer.
 - One requirement you need to Bring your Account or your free tier AWS account, the Domain name that you can access DNS record settings also be able to apply at least two subdomains from the domain name that has been purchased.
-- Done every Saturday at (noon) Noon Toronto Time (UTC-5)
+- Done every Saturday at (noon) Toronto Time (UTC-5)
 - Sessions will be recorded and the organizer will post the link for the youtube playlist.
 
 <h3>Going over the business use-case of our project?</h3>
