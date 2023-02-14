@@ -1,4 +1,4 @@
-# Week 0 — Billing and Architecture
+De# Week 0 — Billing and Architecture
 
 <h3>Discussing the format of the boot camp?</h3>
 
@@ -78,23 +78,23 @@
 - best practice is to create a group and grant administrative IAM policy in that group.
 - and then create a normal or another user and include them in the administrative group.
 
-`Track spend in AWS` `eg. AWS Budgets, AWS Cost Explorer, Billing Alarms`
+<h3>Track spend in AWS` `eg. AWS Budgets, AWS Cost Explorer, Billing Alarms`
 
-`Understanding how to look at monthly billing reports.`
+`Understanding how to look at monthly billing reports.</h3>
 
 - go to your AWS console
 - on the search bar type AWS budget![awsbudget1.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/caa94fd0494c4a0a81129af86cddba21.png)
 - look for the AWS budget and click to go to the dashboard.![awsbudget2.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/143352915e754db2a52fa35a10c6ba8e.png)
 - in this dashboard, you can find the budget or you can click a wizard. like this name My Zero-Spend Budget
 
-`Launching AWS CloudShell and looking at AWS CLI`
+<h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
 - on the top of your AWS console you will see the first icon on the right  ![AWSCLI.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/7869d93f6ca7474eb695079ee2e97a49.png)
 - once click in you will be greeted by the AWS CLI banner ![AWSCLI1.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/16afb8a52acd4849a8a2a78e3ba6acdb.png)
 - and Then you can start the terminal ![awscli2.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/c4098f69b23f41388194158f0340f5c5.png)
 - you can check the python version installed 
 
-`Generating AWS credentials`
+<h3>Generating AWS credentials</h3>
 
 - consider the root account user already login in AWS console.
 - click on the search box and look for IAM (Identity access management).
