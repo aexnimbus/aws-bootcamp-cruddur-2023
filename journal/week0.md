@@ -55,7 +55,9 @@ De# Week 0 — Billing and Architecture
 - Conceptual Diagram
 ![Diagram](https://user-images.githubusercontent.com/54564078/218749617-a21b2335-9c6d-403d-a4cd-356c2d25f413.png)
 
-<h3> use of C4 models</h3>
+
+<h3> Use of C4 models</h3>
+
 - use as an architect tool for creating a viable product 
 - Has 4 categories, System Context, Containers, Component, and Code;
 - System Context - starting points and talks about how the system will fit in the environment
