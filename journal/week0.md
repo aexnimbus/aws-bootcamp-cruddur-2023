@@ -51,9 +51,8 @@ De# Week 0 — Billing and Architecture
 
 <h3>Using Lucid charts architecture diagram</h3>
 
-- [https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0#](https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0 "Diagram")![Diagram.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/3aadd188535643698bb2935934e42427.png)
+- [https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0#](https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0 "Diagram")![Diagram.png](_docs/assets/cruddur-banner.jpg)
 
-<h3>About C4 Models</h3>
 
 - use as an architect tool for creating a viable product 
 - Has 4 categories, System Context, Containers, Component, and Code;
