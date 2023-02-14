@@ -80,16 +80,25 @@ De# Week 0 — Billing and Architecture
 Understanding how to look at monthly billing reports.</h3>
 
 - go to your AWS console
-- on the search bar type AWS budget![awsbudget1.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/caa94fd0494c4a0a81129af86cddba21.png)
-- look for the AWS budget and click to go to the dashboard.![awsbudget2.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/143352915e754db2a52fa35a10c6ba8e.png)
+- on the search bar type AWS budget
+  ![awsbudget1](https://user-images.githubusercontent.com/54564078/218750561-74677bbd-dbe9-4957-b66b-712763b5b072.png)
+- look for the AWS budget and click to go to the dashboard
+  ![awsbudget2](https://user-images.githubusercontent.com/54564078/218750820-a718e87e-66a1-4c4e-bb06-6335013313b0.png)
 - in this dashboard, you can find the budget or you can click a wizard. like this name My Zero-Spend Budget
+- click and follow the wizard.   
 
 <h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
-- on the top of your AWS console you will see the first icon on the right  ![AWSCLI.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/7869d93f6ca7474eb695079ee2e97a49.png)
-- once click in you will be greeted by the AWS CLI banner ![AWSCLI1.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/16afb8a52acd4849a8a2a78e3ba6acdb.png)
-- and Then you can start the terminal ![awscli2.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/c4098f69b23f41388194158f0340f5c5.png)
-- you can check the python version installed 
+- on the top of your AWS console you will see the first icon on the right pane.
+  ![AWSCLI](https://user-images.githubusercontent.com/54564078/218752132-1d8cb50e-2585-4c07-95a6-b032ce899f17.png)
+
+- once click in you will be greeted by the AWS CLI banner 
+  ![AWSCLI1](https://user-images.githubusercontent.com/54564078/218752250-c8b5352b-73f5-4721-8ee0-d36549a1ef06.png)
+
+- and Then you can start the terminal
+  
+  ![awscli2](https://user-images.githubusercontent.com/54564078/218752480-8986a4ef-b49f-4dac-9dd0-1ec7146f8a97.png)
+
 
 <h3>Generating AWS credentials</h3>
 
