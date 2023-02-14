@@ -11,7 +11,7 @@
 - Done every Saturday at (noon) Noon Toronto Time (UTC-5)
 - Sessions will be recorded and the organizer will post the link for the youtube playlist.
 
-`Going over the business use-case of our project?`
+<h3>Going over the business use-case of our project?</h3>
 
 - You have been hired as a new Employee on a startup. as a cloud engineer interviewed by a co-founder, you will handle the app project using a microservice that can leverage the decoupling of components so that the app will survive in case of a disaster strike. you ask what are microservices and their benefit from your projects and the Co-Founder tells you about Agility, Easy Deployment, Technological Freedom from other providers, and also flexible scaling.
 - in the sessions organizer also quote the “Iron Triangle” that will give you the quality with proportion to Cost, Time, and Scope. that will affect the project along the way. as a project stakeholder and member.
@@ -43,21 +43,21 @@
 - Operational Expenses or OPEX
     
 
-`Looking at an architectural diagram of what we plan to build:`
+<h3>Looking at an architectural diagram of what we plan to build</h3>
 
 - first considered AWS's well-architected framework
-    - - Operational Excellence
-            - Security Pillar
-            - Reliability Pillar
-            - Performance Efficiency
-            - Cost Optimization
-            - Sustainability
+- Operational Excellence
+- Security Pillar
+- Reliability Pillar
+- Performance Efficiency
+- Cost Optimization
+- Sustainability
 
-`See Lucid charts architecture diagram`
+<h3>Using Lucid charts architecture diagram</h3>
 
 - [https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0#](https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0 "Diagram")![Diagram.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/3aadd188535643698bb2935934e42427.png)
 
-`About C4 Models`
+<h3>About C4 Models</h3>
 
 - use as an architect tool for creating a viable product 
 - Has 4 categories, System Context, Containers, Component, and Code;
@@ -66,11 +66,11 @@
 - Component -  This is the granular components of every container 
 - Code - This is how components will be implemented 
 
-`Running the cloud services we will utilize`
+<h3>Running the cloud services we will utilize</h3>
 
 - AWS Services and their free tier components and make sure we got less cost when doing this projects
 
-`Testing that we can access our AWS accounts
+<h3>Testing that we can access our AWS accounts</h3>
 
 - Go to this link [https://signin.aws.amazon.com/](https://signin.aws.amazon.com/ "sign in")
 - Login to your account, fill up the username and password
