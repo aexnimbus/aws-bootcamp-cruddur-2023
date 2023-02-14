@@ -19,27 +19,23 @@ De# Week 0 — Billing and Architecture
 `Note the following during the kickoff meeting with the team.`
 
 - The app is an ephemeral-first micro-blogging platform
-    
 - fractional CTO so less collaboration -partly developed an app - always keep updating
-    
-- how to monetize the platform
-    
-- front end = JS using React -Back end - python using flask - api based only -budget constraint -user content upload?
-    
-- target user college students younger students and professionals -need user validation -need to implement age limit? -AWS cloud technologies
-    
+- how to monetize the platform  
+- front end = JS using React 
+- Back end 
+- python using flask 
+- api based only 
+- budget constraint -user content upload?
+- target user college students younger students and professionals 
+- need user validation 
+- need to implement age limit? 
+- AWS cloud technologies
 - What services need to run? for microservices it’s Containers?
-    
 - Set up budget Monitoring
-    
 - User Engagement for their user stories on their features request
-    
 - Technical report due needed ASAP by investors
-    
 - Architecture Diagram
-    
 - Budget Allocation
-    
 - Operational Expenses or OPEX
     
 
