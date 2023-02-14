@@ -78,9 +78,9 @@ De# Week 0 — Billing and Architecture
 - best practice is to create a group and grant administrative IAM policy in that group.
 - and then create a normal or another user and include them in the administrative group.
 
-<h3>Track spend in AWS` `eg. AWS Budgets, AWS Cost Explorer, Billing Alarms`
+<h3>Track spend in AWS eg. AWS Budgets, AWS Cost Explorer, Billing Alarms.
 
-`Understanding how to look at monthly billing reports.</h3>
+Understanding how to look at monthly billing reports.</h3>
 
 - go to your AWS console
 - on the search bar type AWS budget![awsbudget1.png](file:///home/aextecki/snap/joplin-desktop/30/.config/joplin-desktop/resources/caa94fd0494c4a0a81129af86cddba21.png)
