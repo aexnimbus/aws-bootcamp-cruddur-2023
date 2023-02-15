@@ -100,8 +100,19 @@ Understanding how to look at monthly billing reports.</h3>
 
 - and Then you can start the terminal
   
-  ![awscli2](https://user-images.githubusercontent.com/54564078/218752480-8986a4ef-b49f-4dac-9dd0-1ec7146f8a97.png)
-
+  ![awscli2](https://user-images.githubusercontent.com/54564078/218752480-8986a4ef-b49f-4dac-9dd0-1ec7146f8a97.pehnng)
+  
+ <h3>Installing AWSCLI in gitpod.io environment </h3>
+ 
+ - in the gitpod enviroment loaded, you will see a terminal on the down part of the screen. 
+ - the terminal window is a bash terminal.
+ - type this curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+   unzip awscliv2.zip
+   sudo ./aws/install
+ - the first command curl is to get it from the internet and download it to your gitpod enviroment.
+ - the second command will unzip it.
+ - the their command will install the awscli environment.
+ ![gitpad_install_in_gitpod](https://user-images.githubusercontent.com/54564078/219057565-cf6cfe25-f54a-4dff-a1d1-c1d1870bbb45.png)
 
 <h3>Generating AWS credentials</h3>
 
