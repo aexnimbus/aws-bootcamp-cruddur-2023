@@ -51,8 +51,7 @@ De# Week 0 — Billing and Architecture
 
 <h3>Using Lucid charts architecture diagram</h3>
 
-- [https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0#]
-- Conceptual Diagram
+- <a href="[https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?beaconFlowId=5C609400B58DDF08&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1&page=0_0#]">Conceptual Diagram</a>
 ![Diagram](https://user-images.githubusercontent.com/54564078/218749617-a21b2335-9c6d-403d-a4cd-356c2d25f413.png)
 
 
