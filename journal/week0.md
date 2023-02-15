@@ -100,7 +100,7 @@ Understanding how to look at monthly billing reports.</h3>
 
 - and Then you can start the terminal
   
-  ![awscli2](https://user-images.githubusercontent.com/54564078/218752480-8986a4ef-b49f-4dac-9dd0-1ec7146f8a97.pehnng)
+  ![awscli2](https://user-images.githubusercontent.com/54564078/218752480-8986a4ef-b49f-4dac-9dd0-1ec7146f8a97.png)
   
  <h3>Installing AWSCLI in gitpod.io environment </h3>
  
