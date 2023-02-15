@@ -111,7 +111,7 @@ Understanding how to look at monthly billing reports.</h3>
    sudo ./aws/install
  - the first command curl is to get it from the internet and download it to your gitpod enviroment.
  - the second command will unzip it.
- - the their command will install the awscli environment.
+ - the third command will install the awscli environment.
  ![gitpad_install_in_gitpod](https://user-images.githubusercontent.com/54564078/219057565-cf6cfe25-f54a-4dff-a1d1-c1d1870bbb45.png)
 
 <h3>Generating AWS credentials</h3>
