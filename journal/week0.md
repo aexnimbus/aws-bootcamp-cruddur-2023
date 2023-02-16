@@ -54,7 +54,7 @@ De# Week 0 — Billing and Architecture
 - <a href="https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?viewport_loc=32%2C508%2C1584%2C579%2C0_0&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1">Conceptual Diagram</a>
 ![Diagram](assets/Diagram.png)
 - <a href="https://lucid.app/lucidchart/98ecfcd9-dde0-4ec1-bb26-8ec08c851745/edit?beaconFlowId=09ED51E4BD102098&invitationId=inv_6eca123c-ba15-41e0-96d5-bbb6f7b37e26&page=0_0#">Logical Diagram</a>
-![logical_diagram](https://user-images.githubusercontent.com/54564078/219048909-01b53b04-37ab-4568-9aff-26ac63180b62.png)
+![logical_diagram](assets/logical_diagram.png)
 
 
 <h3> Use of C4 models</h3>
@@ -84,23 +84,23 @@ Understanding how to look at monthly billing reports.</h3>
 
 - go to your AWS console
 - on the search bar type AWS budget
-  ![awsbudget1](https://user-images.githubusercontent.com/54564078/218750561-74677bbd-dbe9-4957-b66b-712763b5b072.png)
+  ![awsbudget1](assets/awsbudget1.png)
 - look for the AWS budget and click to go to the dashboard
-  ![awsbudget2](https://user-images.githubusercontent.com/54564078/218750820-a718e87e-66a1-4c4e-bb06-6335013313b0.png)
+  ![awsbudget2](assets/awsbudget2.png)
 - in this dashboard, you can find the budget or you can click a wizard. like this name My Zero-Spend Budget
 - click and follow the wizard.   
 
 <h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
 - on the top of your AWS console you will see the first icon on the right pane.
-  ![AWSCLI](https://user-images.githubusercontent.com/54564078/218752132-1d8cb50e-2585-4c07-95a6-b032ce899f17.png)
+  ![AWSCLI](assets/AWSCLI.png)
 
 - once click in you will be greeted by the AWS CLI banner 
-  ![AWSCLI1](https://user-images.githubusercontent.com/54564078/218752250-c8b5352b-73f5-4721-8ee0-d36549a1ef06.png)
+  ![AWSCLI1](assets/AWSCLI1.png)
 
 - and Then you can start the terminal
   
-  ![awscli2](https://user-images.githubusercontent.com/54564078/218752480-8986a4ef-b49f-4dac-9dd0-1ec7146f8a97.png)
+  ![awscli2](assets/awscli2.png)
   
  <h3>Installing AWSCLI in gitpod.io environment </h3>
  
@@ -112,7 +112,7 @@ Understanding how to look at monthly billing reports.</h3>
  - the first command curl is to get it from the internet and download it to your gitpod enviroment.
  - the second command will unzip it.
  - the third command will install the awscli environment.
- ![gitpad_install_in_gitpod](https://user-images.githubusercontent.com/54564078/219057565-cf6cfe25-f54a-4dff-a1d1-c1d1870bbb45.png)
+ ![gitpad_install_in_gitpod](assets/gitpad_install_in_gitpod.png)
 
 <h3>Generating AWS credentials</h3>
 
