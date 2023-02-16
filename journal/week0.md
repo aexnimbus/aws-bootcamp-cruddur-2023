@@ -87,7 +87,9 @@ Understanding how to look at monthly billing reports.</h3>
 - look for the AWS budget and click to go to the dashboard
   ![awsbudget2](assets/awsbudget2.png)
 - in this dashboard, you can find the budget or you can click a wizard. like this name My Zero-Spend Budget
-- click and follow the wizard.   
+- click and follow the wizard.
+- or create your own budget setup if you click customized (advanced). 
+  ![budget1.png](assets/budget1.png)   
 
 <h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
