@@ -150,7 +150,7 @@ Understanding how to look at monthly billing reports.</h3>
  - the second command will unzip it.
  - the third command will install the awscli environment.
  ![gitpad_install_in_gitpod](assets/gitpad_install_in_gitpod.png)
- - also I already installed it on my local it Linux Ubuntu Machine 
+ - also I already installed it on my local Linux Ubuntu Machine. 
  ![awscli_local](assets/awscli_local.png)
 
 <h3>Generating AWS credentials</h3>
