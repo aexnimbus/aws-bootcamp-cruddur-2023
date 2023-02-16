@@ -104,6 +104,10 @@ Understanding how to look at monthly billing reports.</h3>
   ![budget7](assets/budget7.png)
 - now you can review the configuration you made 
   ![budget8.png](assets/budget8.png)
+- if everything is good. click create 
+  ![budget9.png](assets/budget9.png)
+- it will go and activate and goes to overview page or billing dashboard.
+  ![budget10.png](assets/budget10.png)
 
 
 
