@@ -94,6 +94,8 @@ Understanding how to look at monthly billing reports.</h3>
   ![budget2](assets/budget2.png)
 - when you click next you can right the tag name for the billing alerts 
   ![budget3](assets/budget3.png)
+- now you can put the allocated amount for this budget like in my setup it will cost 0.01$
+  ![budget4](assets/budget4.png)
 
 <h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
