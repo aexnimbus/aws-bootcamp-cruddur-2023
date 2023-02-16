@@ -53,9 +53,8 @@ De# Week 0 — Billing and Architecture
 
 - <a href="https://lucid.app/lucidchart/a40c1e85-8fc6-4531-a9a2-1c9df62b4348/edit?viewport_loc=32%2C508%2C1584%2C579%2C0_0&invitationId=inv_eac5ee7a-7a3f-49ab-a38f-86ca28c05df1">Conceptual Diagram</a>
 ![Diagram](assets/Diagram.png)
-- <a href="https://lucid.app/lucidchart/98ecfcd9-dde0-4ec1-bb26-8ec08c851745/edit?beaconFlowId=09ED51E4BD102098&invitationId=inv_6eca123c-ba15-41e0-96d5-bbb6f7b37e26&page=0_0#">Logical Diagram</a>
+- <a href="https://lucid.app/lucidchart/98ecfcd9-dde0-4ec1-bb26-8ec08c851745/edit?viewport_loc=-151%2C0%2C2042%2C800%2C0_0&invitationId=inv_6eca123c-ba15-41e0-96d5-bbb6f7b37e26">Logical Diagram</a>
 ![logical_diagram](assets/logical_diagram.png)
-
 
 <h3> Use of C4 models</h3>
 
