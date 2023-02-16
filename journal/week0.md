@@ -1,4 +1,4 @@
-De# Week 0 — Billing and Architecture
+KoDe# Week 0 — Billing and Architecture
 
 <h3>Discussing the format of the boot camp?</h3>
 
@@ -150,6 +150,8 @@ Understanding how to look at monthly billing reports.</h3>
  - the second command will unzip it.
  - the third command will install the awscli environment.
  ![gitpad_install_in_gitpod](assets/gitpad_install_in_gitpod.png)
+ - also you can install I already installed it on my local it Linux Ubuntu Machine 
+ ![awscli_local](assets/awscli_local.png)
 
 <h3>Generating AWS credentials</h3>
 
