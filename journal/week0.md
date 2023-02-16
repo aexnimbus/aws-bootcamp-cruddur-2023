@@ -96,6 +96,16 @@ Understanding how to look at monthly billing reports.</h3>
   ![budget3](assets/budget3.png)
 - now you can put the allocated amount for this budget like in my setup it will cost 0.01$
   ![budget4](assets/budget4.png)
+- you can go to scope options and you can choose blended. I like to have a unblended cost for this i will know who will trigger my cost in AWS 
+  ![budget5](assets/budget5.png)
+- Now you can create your own billing alerts for threshold
+  ![budget6](assets/budget6.png)
+- the alerts threshold that will trigger by the percent you input in the threshold trigger box and you can put also your email address for the notification
+  ![budget7](assets/budget7.png)
+- now you can review the configuration you made 
+  ![budget8.png](assets/budget8.png)
+
+
 
 <h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
