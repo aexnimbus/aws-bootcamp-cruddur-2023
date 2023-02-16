@@ -81,6 +81,8 @@ De# Week 0 — Billing and Architecture
 
 Understanding how to look at monthly billing reports.</h3>
 
+<h4>AWS budgets</h4> 
+    
 - go to your AWS console
 - on the search bar type AWS budget
   ![awsbudget1](assets/awsbudget1.png)
@@ -88,6 +90,9 @@ Understanding how to look at monthly billing reports.</h3>
   ![awsbudget2](assets/awsbudget2.png)
 - in this dashboard, you can find the budget or you can click a wizard. like this name My Zero-Spend Budget
 - click and follow the wizard.
+
+<h4>AWS Billing Alarms</h4>
+
 - or create your own budget setup if you click customized (advanced). 
   ![budget1.png](assets/budget1.png)
 - in the budget types you can pick cost budget 
@@ -109,7 +114,18 @@ Understanding how to look at monthly billing reports.</h3>
 - it will go and activate and goes to overview page or billing dashboard.
   ![budget10.png](assets/budget10.png)
 
+<h4> AWS Cost Management & AWS Cost Explorer</h4>
 
+- in home of cost management you will see in the dashboard tbe cost report
+  ![cost_management.png](assets/cost_management.png)
+- at cost management dashboard you will see the cost explorer
+  ![cost.explorer.png](assets/cost_explorer.png)
+- in the dashboard you can also see the cost report 
+  ![cost_report1](journal/assets/cost_report1.png)
+- you can also create a new report 
+  ![cost_report2.png](assets/cost_report2.png)
+- the usage and report will seen in the dashboard
+  ![cost_report3.png](assets/cost_report3.png)
 
 <h3>Launching AWS CloudShell and looking at AWS CLI</h3>
 
