@@ -121,7 +121,7 @@ Understanding how to look at monthly billing reports.</h3>
 - at cost management dashboard you will see the cost explorer
   ![cost.explorer.png](assets/cost_explorer.png)
 - in the dashboard you can also see the cost report 
-  ![cost_report1](journal/assets/cost_report1.png)
+  ![cost_report1](assets/cost_report1.png)
 - you can also create a new report 
   ![cost_report2.png](assets/cost_report2.png)
 - the usage and report will seen in the dashboard
