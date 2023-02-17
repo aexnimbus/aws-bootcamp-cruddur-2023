@@ -1,4 +1,4 @@
-KoDe# Week 0 — Billing and Architecture
+# Week 0 — Billing and Architecture
 
 <h3>Discussing the format of the boot camp?</h3>
 
