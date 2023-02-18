@@ -156,13 +156,14 @@ Understanding how to look at monthly billing reports.</h3>
  
 <h3> Installing momento inside gitpod terminal </h3>
 <h3> Homework Challenges </h3>
-- I used wget to download the binary for linux .deb files 
+
+- I used wget to download the binary for linux .deb files.
 - <a href="https://github.com/momentohq/momento-cli/releases"> memonthq github page </a>
   ![momento1.png](assets/momento1.png)
 - then use dpkg for hadling deb files installation 
   ![momento2.png](assets/momento2.png)
 - to verified it's been installed you can type memonto in cli 
-  ![momento3.png](journal/assets/momento3.png)
+  ![momento3.png](assets/momento3.png)
 
 <h3>Generating AWS credentials</h3>
 
