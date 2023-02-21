@@ -64,9 +64,20 @@ pip install flask_cors
 
 ![flask6.png](assets/flask6.png)
 
+- you must paste this url at the end of gitpod workspace url 
+
+```
+/api/activities/home
+
+```
+
 - I seen this internal error 500 
 
 ![flask7.png](assets/flask7_error%20in%20Internal500.png)
+
+- I also try this in my local ubuntu machine to debug first if the code have error 
+
+![flask_push_thru%20error_local2.png](assets/flask_push_thru%20error_local2.png)
 
 
 
