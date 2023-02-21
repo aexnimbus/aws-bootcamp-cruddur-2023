@@ -66,7 +66,9 @@ pip install flask_cors
 
 - I seen this internal error 500 
 
-![internalerror](assets/flask7_error in Internal500.png)
+![flask7_error in Internal500.png](assets/flask7_error in Internal500.png)
+
+
 
 
 
