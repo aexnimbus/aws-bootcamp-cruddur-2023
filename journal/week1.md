@@ -48,9 +48,15 @@ pip install flask
 pip install flask_cors
 
 ```
-- if everything has installed and setup 
+- If everything has installed and setup 
 
 ![flask3.png](assets/flask_cors_flask3.png)
+
+- Type again the python flask run command 
+
+![flask4.png](assets/flask4.png)
+
+
 
 
 
