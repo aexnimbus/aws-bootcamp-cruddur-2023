@@ -35,4 +35,17 @@ export FRONTEND_URL="*"
 export BACKEND_URL="*"
 
 ```
+- And run this command "python3 -m flask run --host=0.0.0.0 --port=4567"
+
+```
+python3 -m flask run --host=0.0.0.0 --port=4567
+
+```
+- note: the shell will notify you if the flask is needed. you need to install it via terminal, in my case it's looking for flask module and cors. 
+
+````
+pip install flask 
+
+```
 - 
+
