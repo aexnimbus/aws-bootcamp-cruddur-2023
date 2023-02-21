@@ -81,6 +81,8 @@ pip install flask_cors
 
 - I concluded that the backend code is working and no errors. so I go thru the next instructions
 
+- to be continued
+
 
 
 
