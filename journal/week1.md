@@ -43,12 +43,14 @@ python3 -m flask run --host=0.0.0.0 --port=4567
 ```
 - note: the shell will notify you if the flask is needed. you need to install it via terminal, in my case it's looking for flask module and cors 
 
-````
+```
 pip install flask 
 pip install flask_cors
 
 ```
 - if everything has installed and setup 
 
-![]()
+![flask3.png](assets/flask_cors_flask3.png)
+
+
 
