@@ -62,7 +62,7 @@ pip install flask_cors
 
 - Flask server log for errors. this is a sign everything good working at the backend
 
-![flask6.png](assets/flask6.pninternalerrorg)
+![flask6.png](assets/flask6.png)
 
 - I seen this internal error 500 
 
