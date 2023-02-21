@@ -48,5 +48,7 @@ pip install flask
 pip install flask_cors
 
 ```
+- if everything has installed and setup 
 
+![]()
 
