@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import request
-flask_cors import CORS, cross_origin
+from flask_cors import CORS, cross_origin
 import os
 
 from services.home_activities import *
