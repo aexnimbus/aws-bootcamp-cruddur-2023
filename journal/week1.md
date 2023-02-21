@@ -19,4 +19,20 @@ credit to this site :<a href ="https://www.veritas.com/information-center/contai
 
 -Starting our gitpod as CDE(code development environment) that will give us more flexibility in implementing the code. just for the consideration we need to consider our freetier credit so use it wisely. 
 
+![GitpodCredit.png](assets/GitpodCredit.png)
 
+- Change Directory to our backend-folder with the path of /workspace/aws-bootcamp-cruddur-2023/backend-folder
+
+![flask1.png](assets/flask1.png)
+
+```
+cd /backend-folder
+```
+- Export shell enviroment variables 
+
+```
+export FRONTEND_URL="*"
+export BACKEND_URL="*"
+
+```
+- 
