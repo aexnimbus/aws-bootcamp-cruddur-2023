@@ -60,6 +60,12 @@ pip install flask_cors
 
 ![flask5.png](assets/flask5.png)
 
+- Flask server log for errors. this is a sign everything good working at the backend
+
+![flask6.png](assets/flask6.png)
+
+
+
 
 
 
