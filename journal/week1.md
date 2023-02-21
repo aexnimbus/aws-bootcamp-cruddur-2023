@@ -79,6 +79,10 @@ pip install flask_cors
 
 ![flask_push_thru%20error_local2.png](assets/flask_push_thru%20error_local2.png)
 
+- I concluded that the backend code is working and no errors.
+
+
+
 
 
 
