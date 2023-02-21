@@ -75,7 +75,7 @@ pip install flask_cors
 
 ![flask7.png](assets/flask7_error%20in%20Internal500.png)
 
-- I also try this in my local ubuntu machine to debug first if the code have error 
+- I also try this in my local ubuntu machine to debug first if the code have error, and json api was appeared in my web browser
 
 ![flask_push_thru%20error_local2.png](assets/flask_push_thru%20error_local2.png)
 
