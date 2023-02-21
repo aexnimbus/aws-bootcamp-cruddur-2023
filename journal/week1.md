@@ -11,5 +11,12 @@ credit to this site :<a href ="https://www.veritas.com/information-center/contai
   <h3>Microservices as a mindset — Not “micro-monoliths”</h3>
 <p>The new trend in the cloud computing world breaking up monoliths into microservices to improve the scalability of systems. But is that the only reason why we do it? Along with scalability, there are a ton of other benefits that come with microservices. These benefits are not just good to have but are highly demanded by modern-day customers. Enterprise customers demand high availability, low latency, quick delivery of features, etc. But these benefits can only be reaped if certain practices are followed. In order to follow these practices, you not only need to change your code but your mindset about how to perceive these services. Understanding the motivation and the intent of creating microservices is critical to driving the success of any modern cloud application.</p>
 
-<h3> In this way we can proceed to our activities making a containerized Flask App </h3>
+<h3> As per the CTO expectation we need to containerized the application</h3>
+<ul>
+  <li> React JS = Frontend</li>
+  <li> Python Flask = Backend</li>
+</ul>
+
+-Starting our gitpod as CDE(code development environment) that will give us more flexibility in implementing the code. just for the consideration we need to consider our freetier credit so use it wisely. 
+
 
