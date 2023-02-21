@@ -56,6 +56,12 @@ pip install flask_cors
 
 ![flask4.png](assets/flask4.png)
 
+- untick the lock in the port besides terminal it's need to publicly available in the internet.
+
+![flask5.png](assets/flask5.png)
+
+
+
 
 
 
