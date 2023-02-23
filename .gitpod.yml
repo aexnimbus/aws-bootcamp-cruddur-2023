@@ -19,6 +19,7 @@ tasks:
       pip install flask 
       pip install flask_cors
       pip install cors
+      pip install -U flask-cors
       export FLASK_ENV=development
 vscode:
   extensions:
