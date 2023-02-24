@@ -81,7 +81,27 @@ pip install flask_cors
 
 - I concluded that the backend code is working and no errors. so I go thru the next instructions
 
-- to be continued
+- Adding Dockerfile inside the backend-flask. we can now containerized this backend application on the fly.
+
+- put his code for the Dockerfile 
+
+```
+FROM python:3.10-slim-buster
+
+WORKDIR /backend-flask
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+ENV FLASK_ENV=development
+
+EXPOSE ${PORT}
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
+
+```
+
 
 
 
