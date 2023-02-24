@@ -125,6 +125,9 @@ docker run --rm -p 4567:4567 -it backend-flask
 
 ![flask12](assets/flask12_running%20docker%20run.png)
 
+- and type /api/activities/home again in my case I seen this type error which is I'm debugging now 
+
+![flask13](assets/flask13_running%20error%20when%20goes%20to%20apiactivitieshome.png)
 
 
 
