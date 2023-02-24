@@ -102,8 +102,17 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 
 ```
 
+- then change directory go to upper level folder cd .. and run the code below
 
+```
+docker build -t  backend-flask ./backend-flask
 
+```
+![flask8](assets/flask8_add_docker_file.png)
+
+- the docker will pack the backend-flask folder in container
+
+![backend_flask](assets/flask10_running docker build outside backend_flask.png)
 
 
 
