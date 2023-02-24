@@ -129,6 +129,16 @@ docker run --rm -p 4567:4567 -it backend-flask
 
 ![flask13](assets/flask13_running%20error%20when%20goes%20to%20apiactivitieshome.png)
 
+- debugging the code of to make it work as expected and test the backend 
+- I try to change some other area of the code that causing a issue for internal 500 error and Type Error.
+- and then found out the traceback is reporting for cors issue. and try to messed up the code if it's gonna work out.
+
+![terminal_view](assets/terminal_view.png)
+
+- and it's work out of the box. as a proof of my test backend server is now throwing JSON API value.
+
+![cross_originfix](assets/cross_originfix.png)
+
 
 
 
