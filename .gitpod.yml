@@ -21,7 +21,7 @@ tasks:
       pip install cors
       pip install -U flask-cors
       export FLASK_ENV=development
-  - init: pip3 install -r /backend-flask/requirements.txt
+  - init: pip3 install -r /workspace/aws-bootcamp-cruddur-2023/backend-flask/requirements.txt
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
