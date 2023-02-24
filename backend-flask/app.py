@@ -61,6 +61,7 @@ def data_create_message():
   return
 
 @app.route("/api/activities/home", methods=['GET'])
+@cross_origin()
 def data_home():
   data = HomeActivities.run()
   return data, 200
