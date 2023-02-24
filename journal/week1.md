@@ -140,6 +140,17 @@ docker run --rm -p 4567:4567 -it backend-flask
 ![cross_originfix](assets/cross_originfix.png)
 
 
+- moving forward in the next instructions and test if I can generate a JSON value when running Containerized application of flask.
+- run docker build outside from backend-folder 
+ 
+![docker_build](assets/running_docker_build.png)
 
+- test the backend again for getting the JSON value API
+
+![docker_run](assets/running_docker%40background.png)
+
+- Json/API test results 
+
+![docker_bg_test](assets/running_docker%40background_test.png)
 
 
