@@ -114,12 +114,16 @@ docker build -t  backend-flask ./backend-flask
 
 ![backend_flask](assets/flask10_running%20docker%20build%20outside%20backend_flask.png)
 
+- run the code below 
 
+```
+docker run --rm -p 4567:4567 -it backend-flask
+```
+![flask11](assets/flask11_running%20docker_backend.png)
 
+- then go to port tab and release the lock to view it on your browser 
 
-
-
-
+![flask12](assets/flask12_running%20docker%20run.png)
 
 
 
