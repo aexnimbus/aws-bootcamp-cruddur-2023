@@ -1,7 +1,5 @@
 FROM python:3.10-slim-buster
 
-python3 -m flask run --host=0.0.0.0 --port=4567
-
 WORKDIR /backend-flask
 
 COPY requirements.txt requirements.txt
