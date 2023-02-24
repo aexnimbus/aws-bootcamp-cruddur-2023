@@ -112,8 +112,7 @@ docker build -t  backend-flask ./backend-flask
 
 - the docker will pack the backend-flask folder in container
 
-![backend_flask](assets/flask10_running docker build outside backend_flask.png)
-
+![backend_flask](assets/flask10_running%20docker%20build%20outside%20backend_flask.png)
 
 
 
