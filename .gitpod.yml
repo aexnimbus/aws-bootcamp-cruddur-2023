@@ -22,7 +22,6 @@ tasks:
       pip install -U flask-cors
       export FLASK_ENV=development
   - init: pip3 install -r /workspace/aws-bootcamp-cruddur-2023/backend-flask/requirements.txt
-  - init: npm install && npm run build
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
