@@ -4,6 +4,7 @@ from flask_cors import CORS, cross_origin
 import os
 
 from services.home_activities import *
+from services.notification_activities import *
 from services.user_activities import *
 from services.create_activity import *
 from services.create_reply import *
@@ -65,6 +66,13 @@ def data_create_message():
 def data_home():
   data = HomeActivities.run()
   return data, 200
+
+@app.route("/api/activities/notifications", methods=['GET'])
+@cross_origin()
+def data_notifications():
+  data = NotificationActivities.run()
+  return data, 200
+
 
 @app.route("/api/activities/@<string:handle>", methods=['GET'])
 def data_handle(handle):
