@@ -79,7 +79,7 @@ pip install flask_cors
 
 ![flask_push_thru%20error_local2.png](assets/flask_push_thru%20error_local2.png)
 
-- I concluded that the backend code is working and no errors. so I go thru the next instructions
+- I concluded that the backend code is working and no errors. so I go thru the next instructions to see if i generate this kind of error again.
 
 - Adding Dockerfile inside the backend-flask. we can now containerized this backend application on the fly.
 
@@ -125,17 +125,17 @@ docker run --rm -p 4567:4567 -it backend-flask
 
 ![flask12](assets/flask12_running%20docker%20run.png)
 
-- and type /api/activities/home again in my case I seen this type error which is I'm debugging now 
+- and type /api/activities/home again in my case I seen this type error again which is I'm debugging now 
 
 ![flask13](assets/flask13_running%20error%20when%20goes%20to%20apiactivitieshome.png)
 
-- debugging the code of to make it work as expected and test the backend 
-- I try to change some other area of the code that causing a issue for internal 500 error and Type Error.
-- and then found out the traceback is reporting for cors issue. and try to messed up the code if it's gonna work out.
+- I'm debugging the code to make it work as expected and test verify at the backend if i generate an error
+- I try to change some area of the code that causing an issue for internal 500 and Type Error.
+- and then found out the traceback or debug mode of flask is reporting for cors issue. I seen some of app route have cors origin() 
 
 ![terminal_view](assets/terminal_view.png)
 
-- and it's work out of the box. as a proof of my test backend server is now throwing JSON API value.
+- and it's work out of the box. as a proof testing my backend server is now throwing JSON API value.
 
 ![cross_originfix](assets/cross_originfix.png)
 
