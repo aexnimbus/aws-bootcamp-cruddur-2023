@@ -21,6 +21,8 @@ credit to this site :<a href ="https://www.veritas.com/information-center/contai
 
 ![GitpodCredit.png](assets/GitpodCredit.png)
 
+<h2> Containerize Back-end</h2>
+
 - Change Directory to our backend-folder with the path of /workspace/aws-bootcamp-cruddur-2023/backend-folder
 
 ![flask1.png](assets/flask1.png)
@@ -153,4 +155,47 @@ docker run --rm -p 4567:4567 -it backend-flask
 
 ![docker_bg_test](assets/running_docker%40background_test.png)
 
+<h2>Containerize Front-end React</h2>
 
+- install first the requirement of Front End like;
+
+```
+cd frontend-react-js
+npm i
+
+```
+
+
+- After installed all the require library and application you can create Dockerfile inside the front-end folder
+
+```
+FROM node:16.18
+
+ENV PORT=3000
+
+COPY . /frontend-react-js
+WORKDIR /frontend-react-js
+RUN npm install
+EXPOSE ${PORT}
+CMD ["npm", "start"]
+
+```
+![frontendjs.png](assets/create_docker_file_frontend-js.png)
+
+- change dir by typing "cd.." and type this to build a docker and pull the images from dockerhub.
+
+```
+docker build -t frontend-react-js ./frontend-react-js
+
+```
+![docker_build.png](assets/docker_build_frontend_js.png)
+
+- if all goes successful run this to run the docker container images 
+
+```
+docker run -p 3000:3000 -d frontend-react-js
+
+```
+- you will see the crudder app is working at your browser just signup up and the put the passcode as 1234
+
+![crudderapp.png](assets/crudderapp_frontend.png)
