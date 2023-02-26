@@ -164,7 +164,7 @@ cd frontend-react-js
 npm i
 
 ```
-
+![npm.png](assets/frontend_js_npm%20installation.png)
 
 - After installed all the require library and application you can create Dockerfile inside the front-end folder
 
@@ -190,7 +190,7 @@ docker build -t frontend-react-js ./frontend-react-js
 ```
 ![docker_build.png](assets/docker_build_frontend_js.png)
 
-- if all goes successful run this to run the docker container images 
+- if all goes successful type in the terminal to run the docker container images 
 
 ```
 docker run -p 3000:3000 -d frontend-react-js
@@ -199,3 +199,44 @@ docker run -p 3000:3000 -d frontend-react-js
 - you will see the crudder app is working at your browser just signup up and the put the passcode as 1234
 
 ![crudderapp.png](assets/crudderapp_frontend.png)
+
+<h3> Create Docker-compose of Back-end & Front-end code </h3>
+
+- create docker-compose.yml file in your root folder
+
+```
+version: "3.8"
+services:
+  backend-flask:
+    environment:
+      FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+    build: ./backend-flask
+    ports:
+      - "4567:4567"
+    volumes:
+      - ./backend-flask:/backend-flask
+  frontend-react-js:
+    environment:
+      REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+    build: ./frontend-react-js
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend-react-js:/frontend-react-js
+
+# the name flag is a hack to change the default prepend folder
+# name when outputting the image names
+networks: 
+  internal-network:
+    driver: bridge
+    name: cruddur
+    
+```
+
+- cut and paste the code and save it as docker-compose.yml
+
+![docker-compose.png](assets/copy_multidocker_composeFEandBE.png)
+
+
+
