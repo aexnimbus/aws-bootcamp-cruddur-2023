@@ -238,5 +238,16 @@ networks:
 
 ![docker-compose.png](assets/copy_multidocker_composeFEandBE.png)
 
+- and hit docker compose up 
+
+![composeup.png](assets/docker_compose_up_multidocker.png)
+
+- need to verify this port it appears at port tab 
+
+![dockercomposeup.png](assets/docker_compose_up_port_open.png)
+
+- you can also test using curl 
+
+![send_curl.png](assets/send_curl_at_the_local_Server.png)
 
 
