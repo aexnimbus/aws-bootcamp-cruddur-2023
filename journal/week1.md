@@ -253,3 +253,15 @@ networks:
 - if everythig is good you will see in the port 3000 the crudder app
 
 ![crudders](assets/test_unspacy_in_crudder.png)
+
+<h2> Debugging for Cruddur notifications page not showing </h2>
+
+- just follow andrew brown link for notifications page troubleshooting guide.
+
+<a href="https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27"> Write a React Page for Notifications by Andrew Brown </a>
+
+- here is the final screen shot for the notifications page fix. 
+
+![nofications_page.png](assets/notifications%20page%20done.png)
+
+
