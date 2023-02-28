@@ -258,7 +258,7 @@ networks:
 
 - just follow andrew brown link for notifications page troubleshooting guide.
 
-<a href="https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27">- Write a React Page for Notifications by Andrew Brown </a>
+<a href="https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27">- Write a React Page for Notifications by Andrew Brown - </a>
 
 - here is the final screen shot for the notifications page fix. 
 
