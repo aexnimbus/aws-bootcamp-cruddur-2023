@@ -27,9 +27,9 @@ xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 # end of aws-xray-sdk
 
 app = Flask(__name__)
-XRayMiddleware(app, xray_recorder)
 frontend = os.getenv('FRONTEND_URL="*"')
 backend = os.getenv('BACKEND_URL="*"')
+XRayMiddleware(app, xray_recorder)
 origins = [frontend, backend]
 cors = CORS(
   app, 
