@@ -15,9 +15,9 @@ tasks:
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
   - name: react-js
-    command: |
+    init: |
       cd /frontend-react-js
-      npm i
+      npm install
     
   - name: flask 
     init: |
