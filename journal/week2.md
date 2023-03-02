@@ -89,11 +89,18 @@ add daemon service to Docker-compose
     environment:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
-      AWS_REGION: "us-east-1"
+      AWS_REGION: "ca-central-1"
     command:
       - "xray -o -b xray-daemon:2000"
     ports:
       - 2000:2000/udp
+```
+Note: When you run the docker-compose up you will see the log for warning for this 2 env variables. you can export it manually or put it in your awscli folder. this sometimes the issue for credential error when gitpod trying to access the aws xray. 
+
+```
+AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+
 ```
 
 We need to add these two env vars to our backend-flask in our `docker-compose.yml` file
