@@ -16,7 +16,7 @@ tasks:
       sudo apt install -y postgresql-client-13 libpq-dev
   - name: react-js
     init: |
-      cd /frontend-react-js
+      cd /workspace/aws-bootcamp-cruddur-2023/frontend-react-js
       npm install
     
   - name: flask 
