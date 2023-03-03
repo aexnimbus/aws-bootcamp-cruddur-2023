@@ -69,6 +69,9 @@ Type at the Terminal
 ```
 aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
 ```
+and you will get this inside your AWS console 
+
+![xray_sampling](assets/xray_sampling_group.png)
 
 [Install X-ray Daemon](https://docs.aws.amazon.com/xray/latest/devguide/xray-daemon.html)
 
@@ -97,6 +100,9 @@ add daemon service to Docker-compose
 ```
 Note: When you run the docker-compose up you will see the log for warning for this 2 env variables. you can export it manually or put it in your awscli folder. this sometimes the issue for credential error when gitpod trying to access the aws xray. 
 
+![aws_access_key_issue](assets/gitpod_aws_access_key_issue_xray.png)
+
+
 ```
 AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
 AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
@@ -111,8 +117,27 @@ AWS_XRAY_DAEMON_ADDRESS: "xray-daemon:2000"
 
 check service data for last 10 minutes
 
+
 ```
 EPOCH=$(date +%s)
 aws xray get-service-graph --start-time $(($EPOCH-600)) --end-time $EPOCH
 ```
+
+When everything is good you will see this 
+
+![xray.png](assets/xray.png)
+
+also in the cloud watch dashboard 
+
+![dashboard1.png](assets/xray_dashboard1.png)
+![dashboard2.png](assets/xray_dashboard2.png)
+![dashboard3.png](assets/xray_dashboard3.png)
+
+and in the xray old console dashboard 
+
+![xray_log.png](assets/xray_log.png)
+
+a great place to troubleshoot and debug if you having issue is the docker-compose container 
+
+![xray_log.png](assets/xray_log.png)
 
