@@ -135,7 +135,7 @@ also in the cloud watch dashboard
 
 and in the xray old console dashboard 
 
-![xray_log.png](assets/xray_log.png)
+![xray_wordking_now.png](assets/xray_working_now.png)
 
 a great place to troubleshoot and debug if you having issue is the docker-compose container 
 
