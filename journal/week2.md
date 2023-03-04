@@ -232,7 +232,7 @@ checking the query for inside honeycomb new query tab
 
 My docker-compose status inside gitpod
 
-![ss2.png](assets/Screenshot%20at%202023-03-04%2022-52-20.png)
+![ss2.png](assets/Screenshot%20at%202023-03-04%2022-55-20.png)
 
 Honeycomb reported for traces honeycomb  
 
