@@ -30,9 +30,7 @@ processor = BatchSpanProcessor(OTLPSpanExporter())
 provider.add_span_processor(processor)
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
-# Initialize automatic instrumentation with Flask
-FlaskInstrumentor().instrument_app(app)
-RequestsInstrumentor().instrument()
+
 # end of honeycomb
 
 # aws x-ray-sdk
@@ -48,6 +46,12 @@ xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 app = Flask(__name__)
 XRayMiddleware(app, xray_recorder)
+
+# Honeycomb
+# Initialize automatic instrumentation with Flask
+FlaskInstrumentor().instrument_app(app)
+RequestsInstrumentor().instrument()
+# Still a Honeycomb
 frontend = os.getenv('FRONTEND_URL="*"')
 backend = os.getenv('BACKEND_URL="*"')
 origins = [frontend, backend]
