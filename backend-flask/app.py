@@ -17,6 +17,14 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
+#cloudwatch
+import watchtower
+import logging
+from time import strftime
+# end of cloudwatch
+
+
+
 #honeycomb
 from opentelemetry import trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
@@ -51,6 +59,15 @@ app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 # Still a Honeycomb
+# Configuring Logger to Use CloudWatch
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(logging.DEBUG)
+console_handler = logging.StreamHandler()
+cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+LOGGER.addHandler(console_handler)
+LOGGER.addHandler(cw_handler)
+LOGGER.info("some message")
+#cloudwatch
 frontend = os.getenv('FRONTEND_URL="*"')
 backend = os.getenv('BACKEND_URL="*"')
 origins = [frontend, backend]
@@ -62,6 +79,13 @@ cors = CORS(
   methods="OPTIONS,GET,HEAD,POST"
 )
 
+#cloudwatch endpoint 
+@app.after_request
+def after_request(response):
+    timestamp = strftime('[%Y-%b-%d %H:%M]')
+    LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+    return response
+# end of cloud watch
 @app.route("/api/message_groups", methods=['GET'])
 def data_message_groups():
   user_handle  = 'andrewbrown'
