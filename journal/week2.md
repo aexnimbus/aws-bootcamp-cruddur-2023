@@ -141,3 +141,105 @@ a great place to troubleshoot and debug if you having issue is the docker-compos
 
 ![xray_log.png](assets/xray_log.png)
 
+
+HoneyComb.io
+
+When creating a new dataset in Honeycomb it will provide all these installation instructions
+
+We'll add the following files to our `requirements.txt`
+
+```
+opentelemetry-api 
+opentelemetry-sdk 
+opentelemetry-exporter-otlp-proto-http 
+opentelemetry-instrumentation-flask 
+opentelemetry-instrumentation-requests
+```
+
+We'll install these dependencies:
+```
+pip install -r requirements.txt # run this in your current terminal
+```
+
+
+Add to the `app.py`
+```
+from opentelemetry import trace
+from opentelemetry.instrumentation.flask import FlaskInstrumentor
+from opentelemetry.instrumentation.requests import RequestsInstrumentor
+from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
+from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+
+```
+
+also the initialize the functions
+```
+#Initialize tracing and an exporter that can send data to Honeycomb
+provider = TracerProvider()
+processor = BatchSpanProcessor(OTLPSpanExporter())
+provider.add_span_processor(processor)
+trace.set_tracer_provider(provider)
+tracer = trace.get_tracer(__name__)
+```
+
+
+```
+# Initialize automatic instrumentation with Flask
+app = Flask(__name__) # take this out if you have it in your app.py
+FlaskInstrumentor().instrument_app(app)
+RequestsInstrumentor().instrument()
+
+```
+
+Add the following environment variables to `backend-flask` in docker compose
+
+```
+OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
+OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}" # you will see this in your honeycomb ui
+OTEL_SERVICE_NAME: "${HONEYCOMB_SERVICE_NAME}" # you can set up any name here 
+
+```
+
+You'll need to grab the API key from your honeycomb account:
+```
+export HONEYCOMB_API_KEY=""
+export HONEYCOMB_SERVICE_NAME="Cruddur" # sample only 
+gp env HONEYCOMB_API_KEY=""
+gp env HONEYCOMB_SERVICE_NAME="Cruddur"
+
+```
+
+here is the screen shot 
+
+when everything is working no error has been reported at the backend
+
+![uihome.png](assets/uihome.png)
+
+The orange color indicating cannot reach the resource cause I type it wrong.
+and browser throw data type error in python.
+
+![backend_error.png](assets/working_honey_but_error_in_backend.png)
+![backend_source.png](assets/backend_http_source.png)
+
+To check it at the backend I point it out to the rignt resource API end point
+
+![right_resource.png](assets/pointing_the_right_resource.png)
+
+checking the query for inside honeycomb new query tab 
+
+![ss.png](assets/Screenshot%20at%202023-03-04%2022-52-44.png)
+
+My docker-compose status inside gitpod
+
+![ss2.png](assets/Screenshot%20at%202023-03-04%2022-52-20.png)
+
+Honeycomb reported for traces honeycomb  
+
+![traces1.png](assets/success_honeycomb.png)
+
+![traces2.png](assets/traces.png)
+
+
+
+
