@@ -84,6 +84,7 @@ cors = CORS(
 def after_request(response):
     timestamp = strftime('[%Y-%b-%d %H:%M]')
     LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+    LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
     return response
 # end of cloud watch
 @app.route("/api/message_groups", methods=['GET'])
