@@ -391,3 +391,37 @@ def rollbar_test():
 
 [Rollbar Flask Example](https://github.com/rollbar/rollbar-flask-example/blob/master/hello.py)
 
+result screenshot is based on my own understanding that any error or no error rollbar will give you some trace.
+
+we start on the requirements.txt 
+
+![req.png](assets/requirements.png)
+
+just a note: rollbar token is the most important piece of this code without it rollbar can't access your backend or frontend code. 
+here I just deployed it on my bash environment.
+
+![rb.png](assets/rollbar_token.png)
+
+Its already declared inside docker-compose.yml file so the docker will search for it. 
+
+![docker.rb](assets/docker-compose_rollbar.png)
+
+I got this error when running my backend code from docker-compose 
+
+![ha.png](assets/homeactivities_error.png)
+
+I fixed this by pasting the access code or token of rollbar to the app.py code.
+
+Then opened the dashboard 
+
+![final1.png](assets/final_report1.png)
+
+![final2.png](assets/final_report2.png)
+
+browsing some data and learning the error code given by rollbar 
+
+![final3.png](assets/final_report3.png)
+
+you can see it also under items
+
+![rollbar_items.png](assets/rollbar_items_report.png)
