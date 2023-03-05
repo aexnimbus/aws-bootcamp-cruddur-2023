@@ -241,5 +241,76 @@ Honeycomb reported for traces honeycomb
 ![traces2.png](assets/traces.png)
 
 
+CloudWatch Logs
 
+Add to the `requirements.txt`
 
+```
+watchtower
+```
+
+```
+pip install -r requirements.txt
+```
+
+In `app.py`
+
+```
+import watchtower
+import logging
+from time import strftime
+```
+
+```
+# Configuring Logger to Use CloudWatch
+LOGGER = logging.getLogger(__name__)
+LOGGER.setLevel(logging.DEBUG)
+console_handler = logging.StreamHandler()
+cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+LOGGER.addHandler(console_handler)
+LOGGER.addHandler(cw_handler)
+LOGGER.info("some message")
+
+@app.after_request
+def after_request(response):
+    timestamp = strftime('[%Y-%b-%d %H:%M]')
+    LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+    return response
+
+```
+
+We'll log something in an API endpoint
+```
+LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
+
+```
+
+Set the env var in your backend-flask for `docker-compose.yml`
+```
+	  AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
+    AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
+    AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
+
+```
+      
+> passing AWS_REGION doesn't seems to get picked up by boto3 so pass default region instead
+
+after running the instructions above here is the results
+
+![install.png](assets/Install_requirements.png)
+
+![status.png](assets/gitpod_status.png)
+
+![error_log.png](assets/type%20error%20log.png)
+
+![fix_error.png](assets/fix_error.png)
+
+![cloudwatch.png](assets/cloudwatchloggroups.png)
+
+![log_events.png](assets/log_events.png)
+
+![log3.png](assets/log3.png)
+
+![log_insights.png](assets/log_insights.png)
+
+![log_insight2.png](assets/log_insight2.png)
