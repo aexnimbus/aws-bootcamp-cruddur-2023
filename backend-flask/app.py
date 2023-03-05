@@ -18,9 +18,9 @@ from services.create_message import *
 from services.show_activity import *
 
 #cloudwatch
-import watchtower
-import logging
-from time import strftime
+#import watchtower
+#import logging
+#from time import strftime
 # end of cloudwatch
 
 #start Rollbar 
@@ -36,13 +36,13 @@ from flask import got_request_exception
 
 
 # Configuring Logger to Use CloudWatch
-LOGGER = logging.getLogger(__name__)
-LOGGER.setLevel(logging.DEBUG)
-console_handler = logging.StreamHandler()
-cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
-LOGGER.addHandler(console_handler)
-LOGGER.addHandler(cw_handler)
-LOGGER.info("some message")
+#LOGGER = logging.getLogger(__name__)
+#LOGGER.setLevel(logging.DEBUG)
+#console_handler = logging.StreamHandler()
+#cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+#LOGGER.addHandler(console_handler)
+#LOGGER.addHandler(cw_handler)
+#LOGGER.info("some message")
 #cloudwatch
 
 #honeycomb
@@ -94,12 +94,12 @@ cors = CORS(
 )
 
 #cloudwatch endpoint 
-@app.after_request
-def after_request(response):
-    timestamp = strftime('[%Y-%b-%d %H:%M]')
-    LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
-    LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
-    return response
+#@app.after_request
+#def after_request(response):
+#    timestamp = strftime('[%Y-%b-%d %H:%M]')
+#    LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+#    LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
+#    return response
 # end of cloud watch
 
 #start rollbar snippet 
