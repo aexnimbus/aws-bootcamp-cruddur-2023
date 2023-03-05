@@ -59,6 +59,25 @@ tracer = trace.get_tracer(__name__)
 
 # end of honeycomb
 
+
+# aws x-ray-sdk
+#from aws_xray_sdk.core import xray_recorder
+#from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+# xray
+
+# x-ray 
+#xray_url = os.getenv("AWS_XRAY_URL")
+#xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+
+# end of aws-xray-sdk
+
+app = Flask(__name__)
+#XRayMiddleware(app, xray_recorder)
+# Honeycomb
+# Initialize automatic instrumentation with Flask
+FlaskInstrumentor().instrument_app(app)
+RequestsInstrumentor().instrument()
+# Still a Honeycomb
 #start rollbar snippet 
 
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
@@ -79,25 +98,6 @@ def init_rollbar():
     got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
 
 # end of rollbar snippet
-
-# aws x-ray-sdk
-#from aws_xray_sdk.core import xray_recorder
-#from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
-# xray
-
-# x-ray 
-#xray_url = os.getenv("AWS_XRAY_URL")
-#xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
-
-# end of aws-xray-sdk
-
-app = Flask(__name__)
-#XRayMiddleware(app, xray_recorder)
-# Honeycomb
-# Initialize automatic instrumentation with Flask
-FlaskInstrumentor().instrument_app(app)
-RequestsInstrumentor().instrument()
-# Still a Honeycomb
 
 frontend = os.getenv('FRONTEND_URL="*"')
 backend = os.getenv('BACKEND_URL="*"')
