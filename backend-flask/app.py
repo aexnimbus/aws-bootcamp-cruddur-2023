@@ -78,26 +78,7 @@ app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
 # Still a Honeycomb
-#start rollbar snippet 
 
-rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
-@app.before_first_request
-def init_rollbar():
-    """init rollbar module"""
-    rollbar.init(
-        # access token
-        rollbar_access_token,
-        # environment name
-        'production',
-        # server root directory, makes tracebacks prettier
-        root=os.path.dirname(os.path.realpath(__file__)),
-        # flask already sets up logging
-        allow_logging_basic_config=False)
-
-    # send exceptions from `app` to rollbar, using flask's signal system.
-    got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
-
-# end of rollbar snippet
 
 frontend = os.getenv('FRONTEND_URL="*"')
 backend = os.getenv('BACKEND_URL="*"')
@@ -118,6 +99,27 @@ def after_request(response):
     LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
     return response
 # end of cloud watch
+
+#start rollbar snippet 
+
+rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+@app.before_first_request
+def init_rollbar():
+    """init rollbar module"""
+    rollbar.init(
+        # access token
+        rollbar_access_token,
+        # environment name
+        'production',
+        # server root directory, makes tracebacks prettier
+        root=os.path.dirname(os.path.realpath(__file__)),
+        # flask already sets up logging
+        allow_logging_basic_config=False)
+
+    # send exceptions from `app` to rollbar, using flask's signal system.
+    got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
+
+# end of rollbar snippet
 
 # rollbar /
 @app.route('/rollbar/test')
