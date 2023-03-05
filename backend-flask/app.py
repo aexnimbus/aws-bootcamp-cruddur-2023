@@ -23,6 +23,16 @@ import logging
 from time import strftime
 # end of cloudwatch
 
+#start Rollbar 
+
+import rollbar
+import rollbar.contrib.flask
+from flask import got_request_exception
+
+# end of import rollbar
+
+
+
 # Configuring Logger to Use CloudWatch
 LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.DEBUG)
@@ -48,6 +58,27 @@ trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
 # end of honeycomb
+
+#start rollbar snippet 
+
+rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+@app.before_first_request
+def init_rollbar():
+    """init rollbar module"""
+    rollbar.init(
+        # access token
+        rollbar_access_token,
+        # environment name
+        'production',
+        # server root directory, makes tracebacks prettier
+        root=os.path.dirname(os.path.realpath(__file__)),
+        # flask already sets up logging
+        allow_logging_basic_config=False)
+
+    # send exceptions from `app` to rollbar, using flask's signal system.
+    got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
+
+# end of rollbar snippet
 
 # aws x-ray-sdk
 #from aws_xray_sdk.core import xray_recorder
@@ -87,6 +118,13 @@ def after_request(response):
     LOGGER.info('Hello Cloudwatch! from  /api/activities/home')
     return response
 # end of cloud watch
+
+# rollbar /
+@app.route('/rollbar/test')
+def rollbar_test():
+    rollbar.report_message('Hello World!', 'warning')
+    return "Hello World!"
+# end of rollbar /
 @app.route("/api/message_groups", methods=['GET'])
 def data_message_groups():
   user_handle  = 'andrewbrown'
