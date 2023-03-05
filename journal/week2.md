@@ -299,18 +299,35 @@ after running the instructions above here is the results
 
 ![install.png](assets/Install_requirements.png)
 
+
+Already run docker-compose and export my AWS credentials using bash 
+
 ![status.png](assets/gitpod_status.png)
+
+Having this error LOGGER not defined 
 
 ![error_log.png](assets/type%20error%20log.png)
 
+To fix the error watch andrew brown 
+
+https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=33
+
 ![fix_error.png](assets/fix_error.png)
 
+you will see the cloudwatch log groups that your service name appeared in the dashboard
+
 ![cloudwatch.png](assets/cloudwatchloggroups.png)
+
+then you can go at log events 
 
 ![log_events.png](assets/log_events.png)
 
 ![log3.png](assets/log3.png)
 
+at the log insight tab
+
 ![log_insights.png](assets/log_insights.png)
 
 ![log_insight2.png](assets/log_insight2.png)
+
+To be continued with Rollbar
