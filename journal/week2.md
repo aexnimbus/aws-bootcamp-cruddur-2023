@@ -425,3 +425,7 @@ browsing some data and learning the error code given by rollbar
 you can see it also under items
 
 ![rollbar_items.png](assets/rollbar_items_report.png)
+
+see also the new_ui of rollbar for stack_trace.
+
+![stack.png](assets/stack_trace_for_new_ui.png)
