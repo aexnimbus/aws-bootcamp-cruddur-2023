@@ -25,6 +25,8 @@ from time import strftime
 
 #start Rollbar 
 
+from time import strftime
+import os
 import rollbar
 import rollbar.contrib.flask
 from flask import got_request_exception
