@@ -4,6 +4,11 @@ services:
     environment:
       FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
       BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      REACT_AWS_PROJECT_REGION : "ca-central-1"
+      REACT_APP_AWS_COGNITO_REGION : "ca-central-1"
+      REACT_APP_AWS_USER_POOLS_ID : "ca-central-1_OcGcRpfYU"
+      REACT_APP_CLIENT_ID : "2bi0fkf86a2n0d4orgc02go5db"
+
       OTEL_EXPORTER_OTLP_ENDPOINT: "https://api.honeycomb.io"
       OTEL_EXPORTER_OTLP_HEADERS: "x-honeycomb-team=${HONEYCOMB_API_KEY}"
       OTEL_SERVICE_NAME: "${HONEYCOMB_SERVICE_NAME}"
