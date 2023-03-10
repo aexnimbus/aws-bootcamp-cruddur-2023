@@ -1,6 +1,6 @@
 # Week 3 — Decentralized Authentication
 
-Install Amplify inside frontend-js folder 
+Install Amplify inside frontend-react-js folder 
 
 ```
 npm i aws-amplify --save
