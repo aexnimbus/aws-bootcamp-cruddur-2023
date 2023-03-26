@@ -19,7 +19,6 @@ from services.show_activity import *
 
 # omenking code 
 cors = CORS(
-  app, 
   resources={r"/api/*": {"origins": origins}},
   headers=['Content-Type', 'Authorization'], 
   expose_headers='Authorization',

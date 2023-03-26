@@ -4,9 +4,6 @@ import DesktopNavigationLink from '../components/DesktopNavigationLink';
 import CrudButton from '../components/CrudButton';
 import ProfileInfo from '../components/ProfileInfo';
 
-<DesktopNavigation user={user} active={'home'} setPopped={setPopped} />
-<DesktopSidebar user={user} />
-
 export default function DesktopNavigation(props) {
 
   let button;
