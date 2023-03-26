@@ -17,14 +17,7 @@ from services.messages import *
 from services.create_message import *
 from services.show_activity import *
 
-# omenking code 
-cors = CORS(
-  resources={r"/api/*": {"origins": origins}},
-  headers=['Content-Type', 'Authorization'], 
-  expose_headers='Authorization',
-  methods="OPTIONS,GET,HEAD,POST"
-)
-# omeking end of code 
+
 
 #cloudwatch
 #import watchtower
@@ -90,6 +83,15 @@ app = Flask(__name__)
 #RequestsInstrumentor().instrument()
 # Still a Honeycomb
 
+# omenking code 
+cors = CORS(
+  app, 
+  resources={r"/api/*": {"origins": origins}},
+  headers=['Content-Type', 'Authorization'], 
+  expose_headers='Authorization',
+  methods="OPTIONS,GET,HEAD,POST"
+)
+# omeking end of code 
 
 frontend = os.getenv('FRONTEND_URL="*"')
 backend = os.getenv('BACKEND_URL="*"')
