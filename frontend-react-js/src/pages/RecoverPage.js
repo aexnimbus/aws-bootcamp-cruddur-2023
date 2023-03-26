@@ -28,15 +28,6 @@ const onsubmit_confirm_code = async (event) => {
   return false
 }
 
-## Authenticating Server Side
-
-Add in the `HomeFeedPage.js` a header eto pass along the access token
-
-js
-  headers: {
-    Authorization: `Bearer ${localStorage.getItem("access_token")}`
-  }
-
 // end of code omenking
 export default function RecoverPage() {
   // Username is Eamil

@@ -7,6 +7,11 @@ import ActivityFeed from '../components/ActivityFeed';
 import ActivityForm from '../components/ActivityForm';
 import ReplyForm from '../components/ReplyForm';
 
+js
+headers: {
+  Authorization: `Bearer ${localStorage.getItem("access_token")}`
+}
+
 // [TODO] Authenication
 import Cookies from 'js-cookie'
 
