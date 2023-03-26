@@ -4,6 +4,8 @@ import TrendingSection from '../components/TrendingsSection'
 import SuggestedUsersSection from '../components/SuggestedUsersSection'
 import JoinSection from '../components/JoinSection'
 
+
+
 export default function DesktopSidebar(props) {
   const trendings = [
     {"hashtag": "100DaysOfCloud", "count": 2053 },
@@ -11,6 +13,7 @@ export default function DesktopSidebar(props) {
     {"hashtag": "AWS", "count": 9053 },
     {"hashtag": "FreeWillyReboot", "count": 7753 }
   ]
+
 
   const users = [
     {"display_name": "Andrew Brown", "handle": "andrewbrown"}
@@ -30,6 +33,7 @@ export default function DesktopSidebar(props) {
   } else {
     join = <JoinSection />
   }
+
 
   return (
     <section>

@@ -2,6 +2,17 @@ import './ProfileInfo.css';
 import {ReactComponent as ElipsesIcon} from './svg/elipses.svg';
 import React from "react";
 
+// code from Omenking
+import { Auth } from 'aws-amplify';
+const signOut = async () => {
+  try {
+      await Auth.signOut({ global: true });
+      window.location.href = "/"
+  } catch (error) {
+      console.log('error signing out: ', error);
+  }
+}
+// End of code Omenking
 // [TODO] Authenication
 import Cookies from 'js-cookie'
 
