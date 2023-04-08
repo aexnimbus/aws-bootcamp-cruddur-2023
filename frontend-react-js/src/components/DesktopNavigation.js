@@ -48,6 +48,8 @@ export default function DesktopNavigation(props) {
         active={props.active} />
       {button}
       {profile}
+      <DesktopNavigation user={user} active={'home'} setPopped={setPopped} />
+      <DesktopSidebar user={user} />
     </nav>
   );
 }
